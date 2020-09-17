@@ -3,43 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 5 con CSS </title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Ejercicio 6 con CSS </title>
 
     <style>
-        li {
-            background-color: #f1f1f1;
-            margin: 0 10px;
-            padding: 4px;
+    @media (min-width: 800px) {
+        body {
+            margin: 0 auto;
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+        
         }
 
-        li:last-child,
-        li:first-child  {
-         background-color: #c0000;
+        .contenidoPral, .bloqueRecomendaciones {
+            margin: 0 6px;
+            float:left;
         }
+
+        .contenidoPral {
+            width: 80%;
+            background-color: blueviolet; 
+   
+        }
+        .bloqueRecomendaciones {
+            width: 15%;
+            background-color: blueviolet;
+    
+        }
+     }
+
+    @media (max-width: 800px) and (min-width: 600px)  {
+        body {
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        .contenidoPral, .bloqueRecomendaciones {
+            margin: 0 3px;
+            float:left;
+        }
+
+        .contenidoPral {
+            width: 60%;
+            background-color: blue;
+      
+        }
+        .bloqueRecomendaciones {
+            width: 30%;
+            background-color: blue;
+      
+        }
+     }
+
+       @media (max-width: 599px)  {
+        body {
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 400;
+            font-size: 11px;
+        }
+
+        .contenidoPral {
+            width: 100%;
+            background-color: red;
+         
+        }
+        .bloqueRecomendaciones {
+            background-color: red;
+       
+        }
+     }
+
+  
+       
+       
     </style>
 </head>
 <body>
    <header>
-        <h1>Colores de liste diferentes</h1>
-
+        <h1>Contenido y sección</h1>
     </header>
     <main>
-        <ol>
-         <li>Elemento 1</li>
-         <li>Elemento 2</li>
-         <li>Elemento 3</li>
-         <li>Elemento 4</li>
-         <li>Elemento 5</li>
-         <li>Elemento 6</li>
-         <li>Elemento 7</li>
-         <li>Elemento 8</li>
-         <li>Elemento 9</li>
-         <li>Elemento 10</li>
-         <li>Elemento 11</li>
-     
-        </ol>
-
-    
+        <div class="contenidoPral">
+            <h2>Encabezado contenido</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae commodi, id fuga ab aliquam unde odit, sapiente ipsam neque aperiam officia vel! Qui quibusdam nesciunt quasi quo repellendus perspiciatis impedit.
+            Repellat non soluta sunt provident doloribus minus, neque illo dicta nisi? Officia, reprehenderit. Ratione repellat iste, enim dolores eum, distinctio non magni facere quibusdam est tempora maiores eaque ut hic?
+            Dolores minus cumque esse eos hic vitae optio recusandae impedit cum, laborum culpa accusamus sunt! Laborum voluptatum eligendi sapiente blanditiis? Dolorem maxime unde fuga, recusandae debitis quia ex laudantium alias?
+            Dolore aut vero fugiat blanditiis beatae provident, ducimus ex eaque labore, unde ut voluptatem praesentium eligendi ea non ipsam. Ipsum iure sed deleniti perspiciatis sunt, quidem maiores ad tempora placeat?
+            Nostrum officia excepturi totam. Repellat, animi at? Quasi reiciendis nobis porro pariatur repellat qui nulla maiores cupiditate corrupti? Qui quidem tempore ut ipsam, nulla aperiam sequi! A libero laboriosam repellat.
+            Est, adipisci iste. Repellat rem ab numquam dolorem eaque aliquam iure nihil reprehenderit aperiam? Dolorem veniam voluptatem molestias. Eos quas, incidunt quia architecto officiis explicabo accusantium dolore sequi! Quis, voluptatum?</p>
+        </div>
+        <aside class="bloqueRecomendaciones">
+            <h2>Recomendaciones</h2>
+            <li><a href="#">Enlace 1</a></li>
+            <li><a href="#">Enlace 2</a></li>
+            <li><a href="#">Enlace 3</a></li>
+        </aside>
     
     </main>
     
